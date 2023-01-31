@@ -10,7 +10,6 @@ public class Conta {
     private String titular;
     private Cliente cliente;
 
-
     public Cliente getCliente() {
         return cliente;
     }

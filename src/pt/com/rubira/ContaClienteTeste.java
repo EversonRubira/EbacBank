@@ -23,6 +23,8 @@ public class ContaClienteTeste {
         System.out.println(maria.getConta().getAgencia());
         System.out.println(maria.getConta().getNumeroConta());
 
+
+        System.out.println("--------------------");
         //conta2
 
         Conta contaTwo = new Conta();
@@ -37,6 +39,21 @@ public class ContaClienteTeste {
         System.out.println(pedro.getConta().getAgencia());
         System.out.println(pedro.getConta().getNumeroConta());
 
+
+        System.out.println("--------------------");
+        //conta3
+
+        Conta contaThree = new Conta();
+        contaThree.setTitular("Claudia");
+        contaThree.setAgencia(556);
+        contaThree.setNumeroConta(865734);
+        contaThree.setSaldo(433.09);
+
+        Cliente Claudia = new Cliente("Claudia");
+        Claudia.setConta(contaThree);
+        System.out.println(Claudia.getConta().getTitular());
+        System.out.println(Claudia.getConta().getAgencia());
+        System.out.println(Claudia.getConta().getNumeroConta());
 
     }
 
